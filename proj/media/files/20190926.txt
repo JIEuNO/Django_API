@@ -1,0 +1,31 @@
+20190926
+
+[database W4]
+
+- entity ( squre ) : Written in 『 Capital Letters 『 
+
+- attribute ( round ) : Atomic ( ex. age -> cannot divide )
+	   	  Composite ( ex.  address -> daegu / suseonggu / .... )
+	     	  single-valued -> only one ( ex. age )
+	   	  multi-valued ( multi - round ) -> can have various value ( ex. my own car's color )
+	    	  store-derived -> if we know the birthday, we can derive the age
+		  key attribute ( under line ) -> unique value ( ex. like SSN, not age or gender )
+
+- DEPARTMENT ( entity ) / EMPLOYEE ( entity ) : employee 『 works for 『 one department -> relationship ( diamond )
+ 
+- supervisor 褥 : employee 1 & employee 2 => supervise relationship
+
+- N:1 relationship : one employee works for one department
+  M:N relationship : one employee can work from more than one department
+
+- double line : must participate ( total, or existence dependency )
+
+- relationship: Written in 『 Capital Letters 『 
+
+- weak entity : don't have key-attribute ( hard to classify )
+
+- weak relationship :  if there's no employee, there's no dependent
+          		  ( there's department regardless of the existence of employee )
+
+- binary relationship : 1 realtionship between 2 entity
+   N-ary : 1 relationship between more than 2 entity
